@@ -1,5 +1,14 @@
 let listaAmigos = [];
 
+function adicionarTexto (tag, texto) {
+    let texto = document.querySelector(tag);
+    nomeTemp.innerHTMl = texto
+}
+
+function limparCampo () {
+    document.getElementById("amigo").value = "";
+}
+
 function adicionarAmigo() {
     nome = document.getElementById("amigo").value;
     if (listaAmigos.includes(nome)) {
@@ -11,6 +20,7 @@ function adicionarAmigo() {
             listaAmigos.push(nome);
         }
     }
+    limparCampo();
     console.log(listaAmigos);
 }
 
