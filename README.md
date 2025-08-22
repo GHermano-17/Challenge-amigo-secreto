@@ -2,7 +2,7 @@
 
 Uma aplicação web simples para organizar um sorteio de "Amigo Secreto" (ou "Amigo Oculto") de maneira prática e divertida.
 
-##  Descrição
+##  Descrição:
 
 Este projeto permite que os usuários:
 - Adicionem nomes à lista de participantes.
@@ -11,16 +11,14 @@ Este projeto permite que os usuários:
 
 Feito com HTML, CSS e JavaScript, sem dependências externas — apenas um navegador é suficiente para rodar a aplicação.
 
-##  Funcionalidades
+##  Funcionalidades:
 
 - **Adicionar participantes**: Insira nomes em um campo de texto e clique em "Adicionar".
 - **Validação de entrada**: evita adicionar nomes vazios ou inválidos.
 - **Lista dinâmica**: os nomes adicionados aparecem em tempo real abaixo do campo.
 - **Sorteio aleatório**: ao clicar em "Sortear", um participante é selecionado aleatoriamente e o resultado é exibido.
-- (Opcional) **Evitar nome repetido**: impede que o mesmo nome seja adicionado múltiplas vezes.
-- (Opcional) **Remover após sorteio**: impede que o mesmo nome seja sorteado novamente, removendo-o da lista após cada sorteio.
 
-##  Tecnologias Utilizadas
+##  Tecnologias Utilizadas:
 
 - **HTML** — estrutura da página.
 - **CSS** — estilos visuais e layout.
