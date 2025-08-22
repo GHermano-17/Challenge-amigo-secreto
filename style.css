@@ -1,11 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 :root {
-    --color-primary: #4B69FD;
-    --color-secondary: #FFF9EB;
-    --color-tertiary: #C4C4C4;
-    --color-button: #fe652b;
-    --color-button-hover: #e55720;
-    --color-text: #444444;
+    --color-primary: #5C35E6;
+    --color-secondary: #818BE6;
+    --color-tertiary: #35B6E6;
+    --color-button: #357EE6;
+    --color-button-hover: #3546E6;
+    --color-text: #d0dae8;
     --color-white: #FFFFFF;
+    --primary-font: "DM Serif Text", serif;
+    --secundary-font: "Fira Sans", sans-serif;
 }
 
 /* Estilos gerais */
@@ -37,6 +41,11 @@ body {
     justify-content: center;
     align-items: center;
     padding: 40px 0 0;
+    gap: 20px;
+}
+
+.imagem-header {
+    width: 10%;
 }
 
 /* Seção de entrada */
@@ -54,17 +63,18 @@ body {
 
 /* Títulos */
 .main-title {
-    font-size: 48px;
-    font-family: "Merriweather", serif;
-    font-weight: 900;
+    font-size: 3rem;
+    font-family: var(--primary-font);
+    font-weight: 550;
     font-style: italic;
     color: var(--color-white);
+    width: 40%;
 }
 
 .section-title {
-    font-family: "Inter", serif;
-    font-size: 36px;
-    font-weight: 700;
+    font-family: var(--primary-font);
+    font-size: 2.5rem;
+    font-weight: 400;
     color: var(--color-primary);
     margin: 10px 0;
     text-align: center;
@@ -116,13 +126,13 @@ button {
 }
 
 .button-add {
-    background-color: var(--color-tertiary);
-    color: var(--color-text);
+    background-color: var(--color-button);
+    color: var(--color-white);
     border-radius: 0 25px 25px 0;
 }
 
 .button-add:hover {
-    background-color: #a1a1a1;
+    background-color: var(--color-button-hover);
 }
 
 /* Listas */
@@ -132,6 +142,13 @@ ul {
     font-family: "Inter", sans-serif;
     font-size: 18px;
     margin: 20px 0;
+}
+
+.name-list {
+    font-family: "Fira Sans", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 450;
+    color: var(--color-white);
 }
 
 .result-list {
@@ -159,4 +176,20 @@ ul {
 
 .button-draw:hover {
     background-color: var(--color-button-hover);
+}
+
+@media (max-width: 1000px) {
+    .header-banner {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main-title {
+        width: auto;
+        padding: 3% 10%; 
+    }
+
+    .imagem-header {
+        width: 25%;
+    }
 }
